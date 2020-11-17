@@ -4,8 +4,8 @@
   "description": "A Journal app to log your thoughts",
   "main": "app.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=production node src/app",
-    "dev": "cross-env NODE_ENV=development nodemon src/app"
+    "start": "node src/app",
+    "dev": " nodemon src/app"
   },
   "author": "Aaron Christopher Fernandes",
   "license": "ISC",
