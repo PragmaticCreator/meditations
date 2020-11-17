@@ -1,0 +1,35 @@
+<h3>Meditate On</h3>
+<div class="row">
+  <form action="/thoughts" method="POST" class="col s12">
+    <div class="row">
+      <div class="input-field">
+        <input type="text" id="title" name="title" required>
+        <label for="title">Title</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field">
+        <select id="status" name="status">
+          <option value="public" selected>Public</option>
+          <option value="private">Private</option>
+        </select>
+        <label for="status">Status</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field">
+        <h5>Thoughts</h5>
+        <textarea name="body" id="body"></textarea>
+      </div>
+    </div>
+
+    <div class="row">
+      <input type="submit" value="Save" class="btn blue darken-4">
+      <a href="/dashboard" class="btn orange darken-3">Cancel</a>
+    </div>
+  </form>
+</div>
+
+

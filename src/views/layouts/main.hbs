@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="/css/style.css"/>
+
+  <title>Meditations</title>
+</head>
+<body>
+  <!-- Inserting our navbar -->
+  {{> _header}}
+  {{> _add_btn}}
+  <div class="container">
+    {{{body}}}
+  </div>
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://kit.fontawesome.com/cf15ccd1a7.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ckeditor/4.15.1/ckeditor.js" integrity="sha512-aThGT4RJc95+zt2vrs8iMjrFpsJxcFclp7tweVls6/3cNo3GWvGvtLV576o8Kdvdf3fJhrrG3wkmoea/KJMLFQ==" crossorigin="anonymous"></script>
+  <script>
+    // Some classes need to be initialized
+    M.Sidenav.init(document.querySelector('.sidenav'));
+    M.FormSelect.init(document.querySelector('#status'));
+    M.Tooltip.init(document.querySelector('.tooltipped'));
+
+    CKEDITOR.replace('body', {
+      plugins: 'wysiwygarea, toolbar, basicstyles, link'
+    });
+  </script>
+</body>
+</html>

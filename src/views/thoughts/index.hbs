@@ -1,0 +1,26 @@
+<h1>Thoughts</h1>
+<div class="row">
+  {{#each entries}}
+  <div class="col s12 m4">
+    <div class="card" style="background-color: #f2f2f2;">
+      <div class="card-image">
+        {{{editIcon user ../user _id}}}
+      </div>
+      <div class="card-content center-align">
+        <h5>{{title}}</h5>
+        <p>{{stripTags (truncate body 100)}}</p>
+        <br>
+        <div class="chip">
+          <img src="{{user.image}}">
+          <a href="/thoughts/user/{{user._id}}">{{user.displayName}}</a>
+        </div>
+      </div>
+      <div class="card-action center-align">
+        <a href="/thoughts/{{_id}}" class="btn orange darken-3">Read More</a>
+      </div>
+    </div>
+  </div>
+  {{else}}
+  <p>No entries have been made</p>
+  {{/each}}
+</div>

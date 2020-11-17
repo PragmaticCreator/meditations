@@ -1,0 +1,50 @@
+.p {
+  margin: 10px 0 !important;
+}
+
+.login-container {
+  width: 400px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.entry-wrapper {
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 15px;
+}
+
+.dynamic-state :hover{
+  transition: 180ms all ease-in-out;
+  transform: scale(1.1);
+  color: #fff;
+}
+
+.fa-small {
+  font-size: 16px !important;
+}
+
+.btn-float {
+  float: left;
+  margin-right: 10px; 
+}
+
+.img-small { 
+  width: 130px;
+  object-fit: cover;
+  border: 1px solid #f2f2f2;
+}
+
+@media screen and (max-width: 600px) {
+  .login-container {
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .btn-float {
+    margin-bottom: 10px;
+  }
+}
+
+
