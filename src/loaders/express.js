@@ -9,8 +9,7 @@ const mongoose = require('mongoose');
 const methodOverride = require('method-override');
 
 /**
- *
-method-override This module is our express application.
+ * This module is our express application.
  * Contains express middlewares and route initialization.
  *
  * @param {Object} object
